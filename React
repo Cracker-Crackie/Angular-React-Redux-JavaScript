@@ -1,3 +1,4 @@
+****************************************************************************************************************************************
 Creating an App
 You’ll need to have Node 8.16.0 or Node 10.16.0 or later version on your local development machine (but it’s not required on the server). You can use nvm (macOS/Linux) or nvm-windows to switch Node versions between different projects.
 
@@ -63,5 +64,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.
 
 Your app is ready to be deployed.
+****************************************************************************************************************************************
+
+
 
 
