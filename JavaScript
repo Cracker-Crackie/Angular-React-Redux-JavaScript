@@ -3,3 +3,47 @@
 The Core (ECMAScript)
 The Document Object Model (DOM)
 The Browser Object Model (BOM)
+
+Declaring Variables
+Basic JavaScript uses the keyword var for variable declaration. ECMAScript 6 introduced two new keywords to declare variables; they are let and const. In the world of Professional JavaScript variable declaration, var is now the weakest link. In this topic, we will go over the new keywords, let and const, and explain why they are better than var.
+
+https://learning.oreilly.com/library/view/advanced-javascript/9781789800104/image/Figure_1.3.jpg
+
+Arrow Funtion : 
+When using arrow functions, we must be careful of the scope that these functions are called in. Arrow functions follow normal scoping rules in JavaScript, with the exception of the this scope. Recall that in basic JavaScript, each function is assigned a scope, that is, the this scope. Arrow functions are not assigned a this scope. They inherit their parent's this scope and cannot have a new this scope bound to them. This means that, as expected, arrow functions have access to the scope of the parent function, and subsequently, the variables in that scope, but the scope of this cannot be changed in an arrow function. Using the .apply(), .call(), or .bind() function modifiers will NOT change the scope of an arrow function's this property. If you are in a situation where you must bind this to another scope, then you must use a normal JavaScript function.
+
+
+classes & modules ...
+Classes and Modules were added to ES6. Classes were introduced as a way to expand on prototype-based inheritance by adding some object oriented concepts. Modules were introduced as a way to organize multiple code files in JavaScript and expand on code reusability and scoping among files.
+
+Generator & Iterators ?
+
+
+JavaScript is a single threaded, event driven, asynchronous programming language. What does this mean?
+ This means that JavaScript runs on a single thread and delays/handles certain events or function calls through an event queue. We will break down the basics of how JavaScript does this through the following topic.
+ 
+ In asynchronous code, we can execute lines of code out of chronological order. This means that we can start working on a new line of code before the previous line of code has finished its operation. JavaScript does this with the event loop, which will be covered later in the chapter.
+ 
+ Event Loop is the name we use for a four-part system that manages all operations in JavaScript.The parts of this system are the Stack, the Heap, the Event Queue, and the (main) Event Loop. The Stack, Heap, and Event Queue are all data structures that the JavaScript engine maintains. The main event loop is a process that runs behind the scenes and manages the three data structures. In its simplest form, this system is easy to understand. The stack tracks function calls. When a function makes an asynchronous operation, it puts an event handler into the heap. When the async operation completes, the event is pushed to the event queue. The event loop polls the queue for events, gets the associated handler off the heap, then calls the function and adds it to the stack. This is the absolute most basic form of the Event Loop.
+ 
+ 
+ Promise.catch()
+ Promise.Finally()
+ 
+ 
+ Declarative Versus Imperative
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
