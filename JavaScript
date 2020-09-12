@@ -1,1 +1,5 @@
+1) Chrome has Blink/V8, Firefox has Gecko/SpiderMoney, and Safari has WebKit/JavaScriptCore.
 
+The Core (ECMAScript)
+The Document Object Model (DOM)
+The Browser Object Model (BOM)
