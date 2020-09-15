@@ -39,6 +39,9 @@ JavaScript is a single threaded, event driven, asynchronous programming language
  https://javascript.info/function-expressions
  https://javascript.info/nullish-coalescing-operator
  https://javascript.info/call-apply-decorators
+ https://javascript.info/bind
+ 
+ https://javascript.info/closure
  
  
  
