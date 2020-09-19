@@ -39,6 +39,10 @@ JavaScript is a single threaded, event driven, asynchronous programming language
  what is Zero delay  in javascript ??
  How instanceOf works ?
  
+ Pure Functions
+Currying - https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339
+Higher-Order functions
+ 
  Overriding class fields: a tricky note?
  
  https://javascript.info/static-properties-methods ?
