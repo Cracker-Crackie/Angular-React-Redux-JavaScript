@@ -1,0 +1,192 @@
+1. What are the different data types present in javascript?
+
+2. Explain Hoisting in javascript.
+
+Hoisting is a default behaviour of javascript where all the variable and function declarations are moved on top.
+**Note - Variable initializations are not hoisted, only variable declarations are hoisted:
+**Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code:
+
+3. Difference between “==” and “===” operators.
+(x == y)  // Returns true since the value of both x and y is the same
+(x === y) // Returns false since the typeof x is "number" and typeof y is "string"
+
+4. Explain Implicit Type Coercion in javascript.
+Implicit type coercion in javascript is automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types
+
+5. Is javascript a statically typed or a dynamically typed language?
+avaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to statically typed language, where the type of a variable is checked during compile-time.
+
+6. What is NaN property in JavaScript?
+typeof of a NaN will return a Number .
+To check if a value is NaN, we use the isNaN() function,
+
+7. Explain passed by value and passed by reference.
+In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference
+
+8. What is an Immediately Invoked Function in javascript?
+An Immediately Invoked Function ( known as IIFE and pronounced as IIFY) is a function that runs as soon as it is defined.
+
+9. Explain Higher Order Functions in javascript.
+Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.
+
+10. Explain “this” keyword. & What is the purpose of ‘This’ operator in JavaScript?
+The JavaScript this keyword refers to the object it belongs to. This has different values depending on where it is used. In a method, this refers to the owner object and in a function, this refers to the global object.
+The “this” keyword refers to the object that the function is a property of.
+
+The value of “this” keyword will always depend on the object that is invoking the function.
+
+
+11. Explain call(), apply() and, bind() methods.
+
+12. What is Currying in javascript?
+
+13. Explain Scope and Scope Chain in javascript.
+
+14. Explain Closures in JavaScript.
+
+15. What are object prototypes?
+
+16. What are callbacks?
+
+17. What is memoization?
+Although using memoization saves time, it results in larger consumption of memory since we are storing all the computed results.
+
+18. What is recursion in a programming language?
+
+
+19. What is the use of a constructor function in javascript?
+Note- Name of a constructor function should always be written in Pascal Notation: every word should start with a capital letter.
+
+
+
+20. What is DOM?
+
+21. What are arrow functions?
+Arrow functions are declared without the function keyword. If there is only one returning expression then we don’t need to use the return keyword as well in an arrow function as shown in the example above. Also, for functions having just one line of code, curly braces { } can be omitted.
+
+22. Differences between declaring variables using var, let and const.
+
+23. What is the rest parameter and spread operator?
+
+
+24. What is the use of promises in javascript?
+
+25. What are classes in javascript?
+Unlike functions, classes are not hoisted. A class cannot be used before it is declared.
+A class can inherit properties and methods from other classes by using the extend keyword.
+All the syntaxes inside the class must follow the strict mode(‘use strict’) of javascript. Error will be thrown if the strict mode rules are not followed.
+
+26. What are generator functions?
+27. Explain WeakSet in javascript.
+28. Explain WeakMap in javascript.
+29. What is Object Destructuring?
+30. What is a Temporal Dead Zone?
+31. What is the difference between Java & JavaScript?
+32. What is JavaScript?
+JavaScript is a lightweight, interpreted programming language with object-oriented capabilities that allows you to build interactivity into otherwise static HTML pages. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.
+It is a lightweight, interpreted programming language.
+It is designed for creating network-centric applications.
+It is complementary to and integrated with Java.
+It is an open and cross-platform scripting language.
+
+Less server interaction − You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.
+
+Immediate feedback to the visitors − They don’t have to wait for a page reload to see if they have forgotten to enter something.
+Increased interactivity − You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.
+Richer interfaces − You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.
+
+
+Less server interaction − You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.
+
+Immediate feedback to the visitors − They don’t have to wait for a page reload to see if they have forgotten to enter something.
+
+Increased interactivity − You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.
+
+Richer interfaces − You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.
+
+
+33. What is Closure? Give an example.
+Closures are created whenever a variable that is defined outside the current scope is accessed from within some inner scope. It gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created. To use a closure, simply define a function inside another function and expose it.
+
+34. How to create a cookie using JavaScript?
+The simplest way to create a cookie is to assign a string value to the document.cookie object, which looks like this-
+
+Syntax : document.cookie = "key1 = value1; key2 = value2; expires = date";
+
+35. What is the difference between Attributes and Property?
+Attributes-  provide more details on an element like id, type, value etc.
+
+Property-  is the value assigned to the property like type=”text”, value=’Name’ etc.
+
+36.  What is a Typed language?
+Typed Language is in which the values are associated with values and not with variables. It is of two types:
+
+Dynamically: in this, the variable can hold multiple types; like in JS a variable can take number, chars.
+Statically: in this, the variable can hold only one type, like in Java a variable declared of string can take only set of characters and nothing else.
+
+37. What is the difference between Local storage & Session storage?
+Storage - JavaScript interview questions
+
+
+
+Local Storage – The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) – reducing the amount of traffic between client and server. It will stay until it is manually cleared through settings or program.
+
+Session Storage – It is similar to local storage; the only difference is while data stored in local storage has no expiration time, data stored in session storage gets cleared when the page session ends. Session Storage will leave when the browser is closed.
+38. What is the difference between innerHTML & innerText?
+innerHTML – It will process an HTML tag if found in a string
+
+innerText – It will not process an HTML tag if found in a string
+
+
+39. What is an event bubbling in JavaScript?
+Event bubbling is a way of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event. With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements. The execution starts from that event and goes to its parent element. Then the execution passes to its parent element and so on till the body element.
+
+40. How can you convert the string of any base to integer in JavaScript?
+The parseInt() function is used to convert numbers between different bases. It takes the string to be converted as its first parameter, and the second parameter is the base of the given string.
+
+For example-parseInt("4F", 16)
+
+41. what is Strict mode ?
+Is a way to introduce better error-checking into your code.
+When you use strict mode, you cannot use implicitly declared variables, or assign a value to a read-only property, or add a property to an object that is not extensible.
+You can enable strict mode by adding “use strict” at the beginning of a file, a program, or a function.
+
+
+42. What is the reason for wrapping the entire content of a JavaScript source file in a function book?
+This is an increasingly common practice, employed by many popular JavaScript libraries. This technique creates a closure around the entire contents of the file which, perhaps most importantly, creates a private namespace and thereby helps avoid potential name clashes between different JavaScript modules and libraries.
+Another feature of this technique is to allow for an easy alias for a global variable. This is often used in jQuery plugins.
+
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+
