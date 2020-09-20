@@ -49,6 +49,8 @@ Higher-Order functions
  
  What are generator functions?
  
+  What's the difference between event.preventDefault() and event.stopPropagation() methods?
+↑ The event.preventDefault() method prevents the default behavior of an element. If used in a form element it prevents it from submitting. If used in an anchor element it prevents it from navigating. If used in a contextmenu it prevents it from showing or displaying. While the event.stopPropagation() method stops the propogation of an event or it stops the event from occurring in the bubbling or capturing phase.
  https://javascript.info/static-properties-methods ?
  https://javascript.info/mixins ?
  
