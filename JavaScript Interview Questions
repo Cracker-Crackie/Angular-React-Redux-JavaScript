@@ -5,6 +5,7 @@
 Hoisting is a default behaviour of javascript where all the variable and function declarations are moved on top.
 **Note - Variable initializations are not hoisted, only variable declarations are hoisted:
 **Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code:
+**Note - only function declarations and variables declared with the var keyword are hoisted not function expressions or arrow functions, let and const keywords.
 
 3. Difference between “==” and “===” operators.
 (x == y)  // Returns true since the value of both x and y is the same
@@ -43,6 +44,28 @@ The value of “this” keyword will always depend on the object that is invokin
 13. Explain Scope and Scope Chain in javascript.
 
 14. Explain Closures in JavaScript.
+This is probably the hardest question of all these questions because Closures is a controversial topic. So I'm gonna explain it from what I understand.
+Closures is simply the ability of a function at the time of declaration to remember the references of variables and parameters on its current scope, on its parent function scope, on its parent's parent function scope until it reaches the global scope with the help of Scope Chain. Basically it is the Scope created when the function was declared.
+var globalVar = "global";
+var outerVar = "outer"
+
+function outerFunc(outerParam) {
+  function innerFunc(innerParam) {
+    console.log(globalVar, outerParam, innerParam);
+  }
+  return innerFunc;
+}
+
+const x = outerFunc(outerVar);
+outerVar = "outer-2";
+globalVar = "guess"
+x("inner");
+
+This will print "guess outer inner". The explanation for this is that when we invoke the outerFunc function and assigned the returned value the innerFunc function to the variable x, the outerParam will have a value of outer even though we assign a new value outer-2 to the outerVar variable because
+the reassignment happened after the invocation of the outer function and in that time when we invoke the outerFunc function it's look up the value of outerVar in the Scope Chain, the outerVar will have a value of "outer". Now, when we invoke the x variable which have a reference to the innerFunc, the
+innerParam will have a value of inner because thats the value we pass in the invocation and the globalVar variable will have a value of guess because before the invocation of the x variable we assign a new value to the globalVar and at the time of invocation x the value of globalVar in the_Scope Chain_ is
+guess.
+
 
 15. What are object prototypes?
 
@@ -174,32 +197,125 @@ Throws error on invalid usage of delete. The delete operator (used to remove pro
 
 
 44. How many types of functions JavaScript supports?
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
+45. What does the && operator do?
+The && or Logical AND operator finds the first falsy expression in its operands and returns it and if it does not find any falsy expression it returns the last expression. It employs short-circuiting to prevent unnecessary work. I've used this in the catch block when closing database connection in one of my projects.
+
+46. What does the || operator do?
+The || or Logical OR operator finds the first truthy expression in its operands and returns it. This too employs short-circuiting to prevent unnecessary work. It was used before to initialize default parameter values IN functions before ES6 Default function parameters was supported.
+
+
+47. Is using the + or unary plus operator the fastest way in converting a string to a number?
+ According to MDN Documentation the + is the fastest way of converting a string to a number because it does not perform any operations on the value if it is already a number.
+
+48. What is the DOM?
+The document object in JavaScript represents the DOM. It provides us many methods that we can use to selecting elements to update element contents and many more.
+
+49. What's Event Bubbling?
+When an event occurs on a DOM element, that event does not entirely occur on that just one element. In the Bubbling Phase, the event bubbles up or it goes to its parent, to its grandparents, to its grandparent's parent until it reaches all the way to the window. The addEventListener method has a third optional parameter useCapture with a default value of false the event will occur in the Bubbling phase if true the event will occur in the Capturing Phase. If we click on the child element it logs window,document,html, grandparent and parent and child respectively on the console. This is Event Capturing.
+
+
+51.  What's the difference between event.preventDefault() and event.stopPropagation() methods?
+↑ The event.preventDefault() method prevents the default behavior of an element. If used in a form element it prevents it from submitting. If used in an anchor element it prevents it from navigating. If used in a contextmenu it prevents it from showing or displaying. While the event.stopPropagation() method stops the propogation of an event or it stops the event from occurring in the bubbling or capturing phase.
+
+52. How to know if the event.preventDefault() method was used in an element?
+↑ We can use the event.defaultPrevented property in the event object. It returns a boolean indicating if the event.preventDefault() was called in a particular element.
+
+53. What is event.target ?
+↑ In simplest terms, the event.target is the element on which the event occurred or the element that triggered the event.
+
+54. What is event.currentTarget? 
+The event.currentTarget is the element on which we attach the event handler explicitly.
+
+55. How to evaluate multiple expressions in one line?
+↑We can use the , or comma operator to evaluate multiple expressions in one line. It evaluates from left-to-right and returns the value of the last item on the right or the last operand.
+
+56. What is the use Function.prototype.apply method?
+
+57. What is the use Function.prototype.call method?
+58. What is the usage of Function.prototype.bind?
+
+59. What is Functional Programming and what are the features of JavaScript that makes it a candidate as a functional language?
+Functional Programming is a declarative programming paradigm or pattern on how we build our applications with functions using expressions that calculates a value without mutating or changing the arguments that are passed to it.
+
+JavaScript Array has map, filter, reduce methods which are the most famous functions in the functional programming world because of their usefulness and because they don't mutate or change the array which makes these functions pure and JavaScript supports Closures and Higher Order Functions which are a characteristic of a Functional Programming Language.
+
+60. Why are functions called First-class Objects?
+A programming language is said to have First-class functions when functions in that language are treated like any other variable. For example, in such a language, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.
+
+61. What is the arguments object?
+↑ The arguments object is a collection of parameter values pass in a function. It's an Array-like object because it has a length property and we can access individual values using array indexing notation arguments[1] but it does not have the built-in methods in an array forEach,reduce,filter and map.
+
+
+62. How to create an object without a prototype?
+We can create an object without a prototype using the Object.create method.
+
+
+63. What is the Set object and how does it work?
+
+64. What is the Set object and how does it work?
+The Set object is an ES6 feature that lets you store unique values, primitives or object references. A value in a Set can only occur once. It checks if a value exists in the set object using the SameValueZero algorithm.
+
+We can make Set instance using Set constructor and we can optionally pass an Iterable as the initial value.
+
+const set1 = new Set();
+const set2 = new Set(["a","b","c","d","d","e"]);
+
+We can add a new value into the Set instance using the add method and since the add returns the Set object we can chain add calls. If a value already exists in Set object it will not be added again.
+
+set2.add("f");
+set2.add("g").add("h").add("i").add("j").add("k").add("k");
+// the last "k" will not be added to the set object because it already exists
+
+We can remove a value from the Set instance using the delete method, this method returns a boolean indicating true if a value exists in the Set object and false indicating that value does not exist.
+
+set2.delete("k") // returns true because "k" exists in the set object
+set2.delete("z") // returns false because "z" does not exists in the set object
+
+We can check if a specific value exists in the Set instance using the has method.
+
+set2.has("a") // returns true because "a" exists in the set object
+set2.has("z") // returns false because "z" does not exists in the set object
+
+We can get the length of the Set instance using the size property.
+
+set2.size // returns 10
+
+We can delete or remove all the elements in the Set instance using the clear.
+
+set2.clear(); // clears the set data
+
+We can use the Set object for removing duplicate elements in an array.
+
+const numbers = [1, 2, 3, 4, 5, 6, 6, 7, 8, 8, 5];
+const uniqueNums = [...new Set(numbers)]; // has a value of [1,2,3,4,5,6,7,8]
+
+
+
+65. What are Wrapper Objects?
+Primitive Values like string,number and boolean with the exception of null and undefined have properties and methods even though they are not objects.
+
+
+66. What is the difference between Implicit and Explicit Coercion?
+The second console.log statement logs 1, it converts the false to a boolean which will result to a 0 and the true will be 1 hence the result is 1.
+The third console.log statement logs 12, it converts the '2' to a number before multiplying 6 * 2 hence the result 12.
+JavaScript Coercion Rules
+
+While Explicit Coercion is the way of converting values to another type where we (programmers) explicitly do it.
+
+67. What is AJAX?
+
+68. How to check if a number is even without using the % or modulo operator?
+
+69. What's the difference between Object.seal and Object.freeze methods?
+↑ The difference between these two methods is that when we use the Object.freeze method to an object, that object's properties are immutable meaning we can't change or edit the values of those properties. While in the Object.seal method we can change those existing properties.
+
+70. What's the difference between the in operator and the hasOwnProperty method in objects?
+↑ As you know both of these features check if a property exists in an object. It will return truefalse. The difference between them is that the in operator also checks the objects' Prototype Chain if the property was not found in the current object while the hasOwnProperty method just checks if the property exists in the current object ignoring the Prototype Chain.
+
+The key difference is that in will return true for inherited properties, whereas hasOwnProperty() will return false for inherited properties.
+
+Because hasOwnProperty() ignores inherited properties, it is the better choice for plain old JavaScript objects (POJOs). However, hasOwnProperty() will return false for ES6 class getters and methods, like ES6 getters.
+
 71
 72
 73
