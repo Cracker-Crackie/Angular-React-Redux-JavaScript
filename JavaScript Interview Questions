@@ -3,7 +3,7 @@
 2. Explain Hoisting in javascript.
 
 Hoisting is a default behaviour of javascript where all the variable and function declarations are moved on top.
-**Note - Variable initializations are not hoisted, only variable declarations are hoisted:
+**Note - Variable initializations are not hoisted, only variable declarations are apphoisted:
 **Note - To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code:
 **Note - only function declarations and variables declared with the var keyword are hoisted not function expressions or arrow functions, let and const keywords.
 
@@ -38,6 +38,36 @@ The value of “this” keyword will always depend on the object that is invokin
 
 
 11. Explain call(), apply() and, bind() methods.
+
+This - this” always refers to an object. this” refers to an object which calls the function it contains. In the global context “this” refers to either window object or is undefined if the ‘strict mode’ is used.
+
+var car = { 
+    registrationNumber: "GA12345",
+    brand: "Toyota",
+
+    displayDetails: function(){
+        console.log(this.registrationNumber + " " + this.brand);
+    }
+}
+The above will work perfectly fine as long as we use it this way:
+
+car.displayDetails(); // GA12345 Toyota
+But what if we want to borrow a method?
+
+var myCarDetails =  car.displayDetails;
+myCarDetails();
+Well, this won’t work as the “this” will be now assigned to the global context which doesn’t have neither the registrationNumber nor the brand property.
+
+we’re going to establish 5 rules or guidelines.
+
+Implicit Binding
+Explicit Binding
+new Binding
+Lexical Binding
+window Binding
+
+https://blog.bitsrc.io/understanding-call-bind-and-apply-methods-in-javascript-33dbf3217be
+https://www.codementor.io/@niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp
 
 12. What is Currying in javascript?
 
