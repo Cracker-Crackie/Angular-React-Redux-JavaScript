@@ -48,6 +48,7 @@ Higher-Order functions
  Overriding class fields: a tricky note?
  
  What are generator functions?
+ What is a prototype chain?
  
   What's the difference between event.preventDefault() and event.stopPropagation() methods?
 ↑ The event.preventDefault() method prevents the default behavior of an element. If used in a form element it prevents it from submitting. If used in an anchor element it prevents it from navigating. If used in a contextmenu it prevents it from showing or displaying. While the event.stopPropagation() method stops the propogation of an event or it stops the event from occurring in the bubbling or capturing phase.
@@ -62,7 +63,7 @@ Higher-Order functions
  https://javascript.info/nullish-coalescing-operator
  https://javascript.info/call-apply-decorators
  https://javascript.info/bind
- 
+ https://lucybain.com/blog/2014/attribute-vs-property/
  https://javascript.info/closure
  
  
