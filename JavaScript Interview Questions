@@ -451,10 +451,17 @@ Yes, We can define properties for functions because functions are also objects.
 92. How do you create an object with prototype ?
 The Object.create() method is used to create a new object with the specified prototype object and properties. i.e, It uses an existing object as the prototype of the newly created object. It returns a new object with the specified prototype object and properties.\
 
-93
-94
-95
-96
+93. What are the differences between WeakSet and Set
+The main difference is that references to objects in Set are strong while references to objects in WeakSet are weak. This means that an object in WeakSet can be garbage collected if there is no other reference to it.
+
+94. How do you define property on Object constructor
+
+
+95. What is the difference between get and defineProperty
+Both have similar results until unless you use classes. If you use get the property will be defined on the prototype of the object whereas using Object.defineProperty() the property will be defined on the instance it is applied to.
+
+96 What are the properties of Intl object & what is intl ?
+
 97
 98
 99
