@@ -1,4 +1,15 @@
 What is DOCTYPE ? TAG Writing
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"  
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+
+2. Difference between _self, _top, and _parent in the anchor tag target attribute
+
+3. Image Map in HTML 
+
+4. The Picture element in HTML.
+
+5. HTML Description Lists ?
+
+6. What is the difference between <article> and <section> in html5
 
