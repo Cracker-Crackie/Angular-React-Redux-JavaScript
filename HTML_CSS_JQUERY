@@ -13,4 +13,37 @@ What is DOCTYPE ? TAG Writing
 
 6. What is the difference between <article> and <section> in html5
 
- 
+ 7. Difference between .empty(), .remove() and, .detach() in Jquery ?
+ The difference is very simple. The jQuery .empty() method will clear or remove the contents inside an element, including the child nodes that are nested inside the parent or the selected element. Whereas the jQuery .remove() method will remove the selected element along with its contents and other nested elements (or child elements) and its contents.
+Let’s see how both the methods work.
+
+8. Explain bind() vs live() vs delegate() methods in jQuery? 
+http://findnerd.com/list/view/Explain--bind-vs--live-vs--delegate-vs--on-in-jquery/12090/
+
+9. Write the command that gives the version of jQuery ?
+The command $.ui.version returns jQuery UI version.
+
+10. What is jQuery connect ?
+A jQuery connect is a plugin that is used to connect or bind a function with another function. Connect is used to execute the function from the other function or plugin is executed.
+Download jQuery connect file from jQuery.com
+Include that file in the HTML file.
+Use $.connect function to connect a function to another function.
+
+What is the use of param() method in JQuery ?
+The param() method in jQuery is used to create a serialized representation of an object.
+    
+
+Difference between $(this) and this in jQuery ?
+The this and $(this) references are same but the difference is “this” is used in the traditional way but when “this” is used with $() then it becomes a jQuery object.
+
+How can you disable jQuery animation?
+By using jQuery property "jQuery.fx.off" and setting it to true, you can disable jQuery animation.
+
+What is the difference between jquery.size() and jquery.length?
+
+
+
+
+
+
+
