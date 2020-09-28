@@ -45,7 +45,38 @@ What is positions?
 
 what is float?
 
-what is display inline , display inline-block & bloclk
+what is display inline , display inline-block & block.
+
+SASS VS LESS
+In addition to SASS, LESS has also established itself in developer circles. This stylesheet language is strongly oriented around CSS and resembles SCSS in its syntax. Both preprocessors share some of the same properties: Both SASS and LESS allow for the use of mixins and variables. One difference, though, is that SASS is based on Ruby, while LESS uses JavaScript. But even this doesn’t give either of the preprocessors an advantage over the others.
+
+The real differences are found instead in the logical functions: LESS gives users the opportunity to only activate mixins when specific situations occur. This is a helpful feature, but it represents the extent of logical links in LESS. SASS, on the other hand, offers loops and case distinctions as known from programming languages.
+
+With SASS, users are free to choose between “indented syntax” or SCSS. Each developer can decide for themselves whether they would like to move away from the CSS rules or stay closer to the original. LESS doesn’t offer this choice. Here, users have to stick with the old rules. Code in LESS is automatically a superset of CSS: All source text formulated in CSS also functions in LESS – just like with SCSS.
+
+Sass is based in Ruby and requires a Ruby install. This is no big deal if you have a Mac. However, it is a longer installation if you have a Windows machine.
+
+LESS was constructed in Ruby, like Sass, but it has been ported to JavaScript. To use LESS, you must upload the applicable JavaScript files to your server or compile the CSS sheets through an offline compiler.
+
+Both Sass and LESS use specialized characters to assign variables. This is part of the benefit of using these preprocessors. You don’t have to keep entering specifications every time you want to assign variables. Instead, you can just enter the character.
+
+In Sass, it’s the dollar sign ($). In LESS, it’s the "at" symbol (@). The only downside for LESS is that there are a few existing CSS selectors that already use @. That complication could stiffen the learning curve a bit.
+
+
+
+
+
+https://www.onlineinterviewquestions.com/what-is-a-physical-tag-and-logical-tag-i/
+
+- Logical tags are used to tell the meaning of the enclosed text. The example of the logical tag is <strong> </strong> tag. When we enclosed text in strong tag then it tell the browser that enclosed text is more important than other text.
+
+- Physical text are used to tell the browser that how to display the text enclosed in the physical tag.
+Some example of the physical tags are: <b>, <big>, <i>
+
+http://www.scriptingmaster.com/html/character-tags.asp
+
+
+Explain the difference between visibility: hidden and display: none?
 
 
 
