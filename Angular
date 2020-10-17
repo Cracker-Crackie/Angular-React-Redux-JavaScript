@@ -1,1 +1,94 @@
+Install command  - npm install -g @angular/cli
+New Angular Project - ng new my-app
+
+What is Angular CLI - To learn more about using the Angular CLI, see the CLI Overview. In addition to creating the initial workspace and app scaffolding, you can use the CLI to generate Angular code such as components and services. The CLI supports the full development cycle, including building, testing, bundling, and deployment.
+
+
+What is template reference variable ?
+
+Life Cycle Hooks - 
+
+ngOnChanges() - Called before ngOnInit() and whenever one or more data-bound input properties change. Note that if your component has no inputs or you use it without providing any inputs, the framework will not call ngOnChanges().
+
+ngOnInit()	
+Initialize the directive or component after Angular first displays the data-bound properties and sets the directive or component's input properties. See details in Initializing a component or directive in this document.
+
+ngDoCheck()	
+Detect and act upon changes that Angular can't or won't detect on its own. 
+Called immediately after ngOnChanges() on every change detection run, and immediately after ngOnInit() on the first run.
+
+ngAfterContentInit()	
+Respond after Angular projects external content into the component's view, or into the view that a directive is in. Called once after the first ngDoCheck().
+
+ngAfterContentChecked()	
+Respond after Angular checks the content projected into the directive or component.Called after ngAfterContentInit() and every subsequent ngDoCheck().
+
+ngAfterViewInit()	
+Respond after Angular initializes the component's views and child views, or the view that contains the directive.
+Called once after the first ngAfterContentChecked().
+
+ngAfterViewChecked()	
+Respond after Angular checks the component's views and child views, or the view that contains the directive.
+Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked().
+
+ngOnDestroy()	
+Cleanup just before Angular destroys the directive or component. Unsubscribe Observables and detach event handlers to avoid memory leaks. See details in Cleaning up on instance destruction in this document.
+
+Q. explains why you should avoid complex constructor logic.
+
+View encapsulation
+In Angular, component CSS styles are encapsulated into the component's view and don't affect the rest of the application.
+you can set the view encapsulation mode in the component metadata. Choose from the following modes:
+ViewEncapsulation.Native
+ViewEncapsulation.Emulated
+ViewEncapsulation.None
+
+
+Parent Child Communication 
+
+Parent to child -> @input
+Child to Parent -> @output
+Using a ref of child & calling in function
+Using @viewchild
+Using @viewChildern
+Using a service with observable & stream
+
+Angular elements overview ?
+
+what is ViewContainerRef ?
+
+
+
+
+
+https://codecraft.tv/courses/angular/components/templates-styles-view-encapsulation/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://codecraft.tv/courses/angular/components/viewchildren-and-contentchildren/
+
+
+
+
+
+
+
+
+
 
