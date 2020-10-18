@@ -93,6 +93,100 @@ Optimize angular app?
 
 NGZone
 
+In this video, We are going to cover the top 21+ Protractor Interview Questions and Answers with pdf download.
+
+Question 1 : What is Protractor?
+Answers : Protractor is an end-to-end test framework for Angular and AngularJS applications.
+
+Protractor runs tests against your application running in a real browser, interacting with it as a user would.
+
+Question 2 : Can Protractor be used for testing Non-Angular JS Applications?
+Yes. Protractor can be used for testing Non-Angular JS or Non-Angular Apps.
+browser.ignoreSynchronization = true;
+browser.waitforangularenabled(false)
+
+
+Question 3 : What are the test frameworks supported by Protractor?
+Protractor supports two behavior driven development (BDD) test frameworks such as Jasmine & Mocha.
+
+
+Question 4 : What is a conf file in Protractor?
+The configuration file tells Protractor how to set up the Selenium Server, which tests to run, how to set up the browsers, and which test framework to use. 
+The configuration file can also include one or more global settings. 
+The config file provides explanations for all of the Protractor configuration options. Default settings include the standalone Selenium Server, the Chrome browser, and the Jasmine test framework.
+
+
+Question 5 : What is a spec file in Protractor?  
+Spec file is the one where we write actual test code. It contains the logic and locators to interact with an application.
+
+
+Question 6 : How to exclude a spec file in Protractor?
+You can exclude the spec’s by adding them in the exclude tag in your conf.js file.
+You can also add patterns to exclude many test scripts with similar names.
+Sometimes we may face a situation of running only few tests out of all. In this case, we use exclude tag in our conf.js file to run only few tests. Say we want to exclude test name “myTest.js”
+exclude: [myTest.js]
+
+Question 7 : What are the locators in Protractor?
+It has unique set of locators particularly to identify elements based on AngularJS attributes.
+
+by.className
+by.css
+by.id
+by.linkText
+by.name
+by.partialLinkText
+by.tagName
+by.xpath
+
+Question 9 : How to add custom locator for Protractor?
+By using addLocator method.
+
+Question 10 : How do you check the status of a webdriver manager and how do you update webdriver manager?
+To check the status of webdriver manager, run the following in your command prompt
+
+webdriver-manager status
+
+To update webdriver manager, run the following code in your command prompt
+
+webdriver-manager update
+
+Question 11 : What is browser’s command in Protractor?
+driver.navigate().refresh();
+
+browser.refresh makes a full reload of the current page and loads mock modules before Angular.
+
+Question 12 : What is the difference between “GET” and “NAVIGATE in Protractor?
+GET:
+Get method is used to navigate to the given destination.
+browser.get(“https://www.softwaretestingmaterial.c...
+        Navigate:
+Navigate method is used to navigate to the given destination
+browser.navigate()
+If we want to load a previous page or next page in a browser we can use back and forward.
+
+
+browser.navigate().back();
+browser.navigate().forward();
+
+Question 13 : How to accept/cancel Alert in Protractor?
+By using accept() method of Alerts class, we accept Alerts in Protractor.
+
+Note: We have to switch the control to the alert using switchTo().alert() before accepting the alert.
+
+browser.switchTo().alert().accept()
+
+browser.switchTo().alert().dismiss()
+
+Question 14 : How do you stop Page Loading in Protractor when an element is loaded?
+By using Key.ESC to body element in Protractor.
+
+browser.actions().sendKeys(protractor.Key.ESC).perform();
+browser.actions().sendKeys(protractor.Key.ESC).perform();
+
+
+Question 15 : What are the browsers supported by Protractor?
+Chrome, firefox, opera, IE,Safari
+
 
 
 
