@@ -82,9 +82,22 @@ How does a browser determine what elements match a CSS selector?
 
 What is Block Formatting Context? How does it work?
 
+Why Sass is considered better than LESS?
 
+Saas allows you to write reusable methods and use logic statements, e., loops, and conditionals
+Saas user can access Compass library and use some awesome features like dynamic sprite map generation, legacy browser hacks and cross-browser support for CSS3 features
+Compass also allows you to add an external framework like Blueprint, Foundation or Bootstrap on top
+In LESS, you can write a basic logic statement using a ‘guarded mixin’, which is equivalent to Sass if statements
+In LESS, you can loop through numeric values using recursive functions while Sass allows you to iterate any kind of data
+In Sass, you can write your own handy functions
+One difference, though, is that SASS is based on Ruby, while LESS uses JavaScript.
+To Assign Variables, Sass Uses '$' While LESS Uses '@'
+Sass Has Compass While LESS Has Preboot
+The real differences are found instead in the logical functions: LESS gives users the opportunity to only activate mixins when specific situations occur. This is a helpful feature, but it represents the extent of logical links in LESS. SASS, on the other hand, offers loops and case distinctions as known from programming languages.
 
 Normalize Css vs Reset css ?
+
+ Explain when can you use the %placeholders in Sass?
 
 Explain what is the use of &combinator ??
  Explain what is the use of Escaping?
