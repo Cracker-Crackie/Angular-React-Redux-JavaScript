@@ -65,6 +65,7 @@ Higher-Order functions
  https://javascript.info/bind
  https://lucybain.com/blog/2014/attribute-vs-property/
  https://javascript.info/closure
+ https://github.com/lydiahallie/javascript-questions
  
  
  
