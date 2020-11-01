@@ -187,6 +187,41 @@ browser.actions().sendKeys(protractor.Key.ESC).perform();
 Question 15 : What are the browsers supported by Protractor?
 Chrome, firefox, opera, IE,Safari
 
+Define the ng-content Directive?
+
+Digest Cycle in Angular & watch in angular
+Please explain the digest cycle in Angular?
+Answer: The process of monitoring the watchlist in order to track changes in the value of the watch variable is termed the digest cycle in Angular. The previous and present versions of the scope model values are compared in each digest cycle.
+Although the digest cycle process gets triggered implicitly, it is possible to start it manually by using the $apply() function.
+
+What is new in Angular 6?
+Answer: Here are some of the new aspects introduced in Angular 6:
+
+Angular Elements – It allows converting Angular components into web components and embeds the same in some non-Angular application
+Tree Shakeable Provider – Angular 6 introduces a new way of registering a provider directly inside the @Injectable() decorator. It is achieved by using the providedIn attribute
+RxJS 6 – Angular 6 makes use of RxJS 6 internally
+i18n (internationalization) – Without having to build the application once per locale, any Angular application can have “runtime i18n”
+
+
+What change detection strategies do you know?
+Requirement: Expert Angular knowledge
+
+Answer: There are two strategies – Default and OnPush. If all components use the default strategy, Zone checks the entire tree regardless of where the change occurred. To inform Angular that we will comply with the performance improvement conditions, we need to use the onpush change detection strategy. This will tell Angular that our component depends only on the input and any object that is passed to it should be considered immutable. This is all built on the Principle of the mile automaton, where the current state depends only on the input values.
+
+
+What is Change Detection, how does Change Detection Mechanism work?
+Requirement: Expert Angular knowledge
+
+Answer: Change Detection is the process of synchronizing a model with a view. In Angular, the flow of information is unidirectional, even when using the ng Model to implement two-way binding, which is syntactic sugar on top of a unidirectional flow.
+
+Change Detection Mechanism-moves only forward and never looks back, starting from the root (root) component to the last. This is the meaning of one-way data flow. The architecture of an Angular application is very simple — the tree of components. Each component points to a child, but the child does not point to a parent. One-way flow eliminates the need for a $digest loop.
+
+
+ How do you update the view if your data model is updated outside the ‘Zone’?
+
+
+
+
 
 
 
@@ -197,24 +232,9 @@ Chrome, firefox, opera, IE,Safari
 https://codecraft.tv/courses/angular/components/templates-styles-view-encapsulation/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 https://codecraft.tv/courses/angular/components/viewchildren-and-contentchildren/
+https://www.freakyjolly.com/angular-8-pipes-all-type-of-pipes-with-examples/#.X56wzegzZPY
+https://indepth.dev/the-mechanics-of-property-bindings-update-in-angular/#545b
 
 
 
