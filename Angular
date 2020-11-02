@@ -221,11 +221,47 @@ Change Detection Mechanism-moves only forward and never looks back, starting fro
 
 What is multicasting?
 What is Ivy Renderer? Is it supported by Angular 7?
+https://www.innominds.com/blog/angular-ivy-next-generation-angular-renderer-for-enhanced-performance
+https://www.syncfusion.com/blogs/post/ivy-the-game-changer-in-angular-9.aspx
+
+Ivy makes Angular applications simpler, smaller, and faster.
+Reduces bundle sizes from Angular 8 by an average of 30%.
+Accelerates application building and compilation.
+Smarter recompilation, resulting in 40 to 50% reduction in time to compile.
+Improved speed of internationalization (i18n).
+Easy debugging mode.
+Improved build times, with AOT enabled by default.
+Faster testing.
+Improved CSS class and style binding.
+Improved strict type checking. fullTemplateTypeCheck and strictTemplates
+Improved build errors.
+
+
 What is Zone in Angular?
 What is the purpose of Codelyzer in Angular 8?
 What is NgUpgrade in Angular 8?
+Differential loading by default
 
 It has features such as Virtual scrolling, CLI prompts, Application performance, Drag, and drop, Bundle budget, Angular compiler, Angular elements, NativeScript, Better error handling, etc.
+
+
+What are the limitations of Web Workers?
+Here are the limitations of a Web Worker:
+A web worker cannot directly manipulate the DOM
+It has limited access to methods and properties of the window object.
+It cannot be run directly from the file system. A web worker needs a server to run
+
+
+NgUpgrade?
+
+What is HostListener and HostBinding?
+
+What is runGuardsAndResolvers in Angular 8?
+Angular 8 introduced a number of new and unique options to runGuardsAndResolvers. In general, runGuardsAndResolvers is an option which is used for the Angular router configuration in order to control the resolvers and guards. The first option available in runGuardsAndResolvers is pathParamsChange. Through, this option router will re-run the guards and resolvers. Whenever you want to control over the resolvers and guards, use runGuardsAndResolvers option in Angular 8.
+
+Why Incremental DOM is Tree Shakable? https://blog.nrwl.io/understanding-angular-ivy-incremental-dom-and-virtual-dom-243be844bf36
+
+What is the difference between real Dom and virtual Dom?
 
 
 
