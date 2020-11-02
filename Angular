@@ -219,7 +219,13 @@ Change Detection Mechanism-moves only forward and never looks back, starting fro
 
  How do you update the view if your data model is updated outside the ‘Zone’?
 
+What is multicasting?
+What is Ivy Renderer? Is it supported by Angular 7?
+What is Zone in Angular?
+What is the purpose of Codelyzer in Angular 8?
+What is NgUpgrade in Angular 8?
 
+It has features such as Virtual scrolling, CLI prompts, Application performance, Drag, and drop, Bundle budget, Angular compiler, Angular elements, NativeScript, Better error handling, etc.
 
 
 
