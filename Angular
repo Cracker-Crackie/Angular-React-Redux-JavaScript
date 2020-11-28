@@ -264,9 +264,51 @@ Why Incremental DOM is Tree Shakable? https://blog.nrwl.io/understanding-angular
 What is the difference between real Dom and virtual Dom?
 
 
+What are the advantages of using Angular?
+A few of the major advantages of using Angular framework are listed below:
+
+It supports two-way data-binding
+It follows MVC pattern architecture
+It supports static template and Angular template
+You can add a custom directive
+It also supports RESTfull services
+Validations are supported
+Client and server communication is facilitated
+Support for dependency injection
+Has strong features like Event Handlers, Animation, etc.
 
 
+What is data binding?
+In Angular, data binding is one of the most powerful and important features that allow you to define the communication between the component and DOM(Document Object Model). It basically simplifies the process of defining interactive applications without having to worry about pushing and pulling data between your view or template and component. In Angular, there are four forms of data binding:
 
+ String Interpolation
+Property Binding
+Event Binding
+Two-Way Data Binding
+
+The DI framework in Angular consists of 4 concepts working together:
+
+Token
+This uniquely identifies something that we want injected. A dependency of our code.
+
+Dependency
+The actual code we want injected.
+
+Provider
+This is a map between a token and a list of dependencies.
+
+Injector
+This is a function which when passed a token returns a dependency (or list of dependencies).
+
+jQLite
+
+
+Types of Decorators:
+
+Class decorators like @Component, @NgModule
+Property decorators like @Input and @Output
+Method decorators like @HostListener
+Parameter decorators like @Injectable
 
 
 
