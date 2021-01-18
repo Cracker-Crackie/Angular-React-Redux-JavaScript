@@ -87,4 +87,13 @@ React Offical Docs at : [Docs](https://reactjs.org/)
 If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on  [CodePen](https://reactjs.org/redirect-to-codepen/hello-world),  [CodeSandbox](https://codesandbox.io/s/new), or  [Stackblitz](https://stackblitz.com/fork/react).
 
 ## Interview Question on React
+	- What is React js? Why React.js ?
+	- Features of React?
+    - Where to use react & why?
+	- Compare react with Angular or any other UI library.
+	- What is JSX? Is it necessary to use JSX only?
+	- What is you have to use React without JSX? Possible ? If Yes, How?
+	- What is state in React?
+	- What are props in React?
+	- What is Component?
 
