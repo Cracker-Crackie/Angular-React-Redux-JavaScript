@@ -166,7 +166,56 @@ If you’re interested in playing around with React, you can use an online code 
 - How to implement default or NotFound page?
 - How to make api call and In which component lifecycle methods should I make an api call?
 - How to perform automatic redirect after login?
-- 
-- 
-- 
+- possible to update props in React?
+- How to pretty print JSON with React?
+- What is React label element?
+- setState vs replaceState?
+- What is React-Intl?
+- What are the two ways of formatting in React Intl?
+- What is FormattedMessage in React?
+- What is Flux?
+- What is Redux
+- Combination of Flux Redux Possible ?
+- Which one to use Flux or Redux ?
+- Advantages of Flux ?
+- Why Facebook prefer Flux & not Redux ?
+- What is the difference between mapStateToProps() and mapDispatchToProps()?
+- How to access Redux store outside a component?
+- How to create store in Redux ?
+- What is the difference between React context and React Redux?
+- How to make AJAX request in Redux?
+- What is Redux  Saga ?
+- What is Redux Thunk?
+- redux-saga vs redux-thunk ?
+- What is a us of middleware in Redux?
+- How to use middleware Advantage & Disadvantage ?
+- What is the difference between React Native and React?
+- What is the difference between Flow and PropTypes?
+- What are styled components?
+- Give an example of Styled Components?
+- Difference between React memo function & React lazy function?
+- How do you render Array, Strings and Numbers in React 16 Version?
+- What is the difference between try catch block and error boundaries?
+- What is Error Boundaries ?
+- What is the difference between try catch block and error boundaries?
+- Explain stack strace ?
+- Explain Error Boundaries Rules ?
+- How JSX prevents Injection Attacks?
+- How to prevent a function from being called multiple times?
+- Explain al react dev tools
+- How to use Redux tool ?
+- How to prevent component from rendering?
+- How do you print falsy values in JSX?
+- How to add Bootstrap to a react application?
+- Do browsers understand JSX code?
+- What are hooks in React?
+- Why React hooks was introduced?
+- What are the differences in using hooks and class components with respect to state management?
+- Why should I use hooks?
+- Explain  useState ?
+- Explain useEffect ?
+- Explain useReducer?
+- Explain useStyle ?
+- What is difference between useEffect() vs componentDidMount()?
+- What is the significance of keys in React?
 - 
